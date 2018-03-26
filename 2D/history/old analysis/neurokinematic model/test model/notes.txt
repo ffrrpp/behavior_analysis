@@ -1,0 +1,11 @@
+m1: model0809: old model, only spring force, linear stiffness function
+W = repmat(linspace(0,1,nsegs)',[1,2*length(time)-1]); % stiffness_linear
+
+
+m2: model0817: new model, with damping
+W = repmat([1,1,0.5,0.25,0.15,0.1,0.07,0.05,0.05]',[1,length(time)]); %stiffness
+area = repmat([0.5,1,1,1,0.8,0.6,0.4,0.2,0.2]',[1,length(time)]); % cross sectional area
+C = repmat([1,0.8,0.5,0.3,0.25,0.2,0.15,0.12,0.1]',[1,length(time)]); % damping coefficient
+
+m3: model0818: old model, only spring force, kiran's stiffness function
+W = repmat([0.1,0.2,0.4,0.6,0.8,0.8,0.6,0.4,0.2]',[1,2*length(time)-1]); % stiffness_kiran

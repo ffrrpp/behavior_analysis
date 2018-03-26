@@ -1,0 +1,46 @@
+m1: model0809: old model, only spring force, linear stiffness function
+W = repmat(linspace(0,1,nsegs)',[1,2*length(time)-1]); % stiffness_linear
+
+er_fval = 5.1001
+fs_fval = 2.3102
+
+m2: model0817: new model, with damping
+W = repmat([1,1,0.5,0.25,0.15,0.1,0.07,0.05,0.05]',[1,length(time)]); %stiffness
+area = repmat([0.5,1,1,1,0.8,0.6,0.4,0.2,0.2]',[1,length(time)]); % cross sectional area
+C = repmat([1,0.8,0.5,0.3,0.25,0.2,0.15,0.12,0.1]',[1,length(time)]); % damping coefficient
+
+er_fval = 3.6618
+fs_fval = 2.8544
+
+
+m3: model0818: old model, only spring force, kiran's stiffness function
+W = repmat([0.1,0.2,0.4,0.6,0.8,0.8,0.6,0.4,0.2]',[1,2*length(time)-1]); % stiffness_kiran
+
+er_fval = 4.6243
+fs_fval = 3.8991
+
+m4: model0827: new model, with damping and optimized parameters
+
+W = repmat([0.72,0.45,0.25,0.14,0.1,0.08,0.06,0.05,0.04]',[1,length(time)]);
+area = repmat([0.2,0.3,0.36,0.38,0.35,0.32,0.29,0.26,0.23]',[1,length(time)]);
+C = repmat([0.87,0.8,0.78,0.76,0.7,0.64,0.55,0.4,0.25]',[1,length(time)]);
+
+er_fval = 2.6432
+fs_fval = 1.3318
+
+m5: model0919: new model, with damping and optimized parameters
+W = repmat([0.79,0.70,0.39,0.19,0.15,0.09,0.06,0.05,0.04]',[1,length(time)]);
+area = repmat([0.2,0.3,0.36,0.38,0.35,0.32,0.29,0.26,0.23]',[1,length(time)]);
+C = repmat([0.87,0.8,0.78,0.76,0.7,0.64,0.55,0.4,0.25]',[1,length(time)]);
+
+er_fval = 3.4194
+fs_fval = 1.5896
+
+m6: model1109: new model, with damping and optimized parameters
+
+W = repmat([0.85,0.73,0.36,0.24,0.18,0.13,0.10,0.09,0.07]',[1,length(time)]);
+area = repmat([0.29,0.49,0.59,0.65,0.63,0.60,0.59,0.59,0.57]',[1,length(time)]);
+C = repmat([0.92,0.90,0.89,0.87,0.86,0.82,0.73,0.55,0.35]',[1,length(time)]);
+
+er_fval = 3.3130
+fs_fval = 1.4951
