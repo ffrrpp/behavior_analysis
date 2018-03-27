@@ -1,1 +1,1 @@
-Analysis of digitalized swimming data.
+Various analysis of digitalized swimming data.
