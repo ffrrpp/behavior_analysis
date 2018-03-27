@@ -1,4 +1,4 @@
-#Look up tables generation
+# Look up tables generation
 
 Generate look up tables for fish model-based video anlaysis.
 
