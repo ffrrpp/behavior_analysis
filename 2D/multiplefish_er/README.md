@@ -1,1 +1,4 @@
-Video analysis: digitalization of escape response behavior.
+# Analysis of escape response videos
+
+## Usage
+Run runme_er.m.
